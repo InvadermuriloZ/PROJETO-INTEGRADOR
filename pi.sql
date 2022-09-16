@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Set-2022 às 15:09
+-- Tempo de geração: 16-Set-2022 às 15:51
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `email` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Extraindo dados da tabela `admin`
+--
+
+INSERT INTO `admin` (`login`, `nome`, `senha`, `nivel`, `email`) VALUES
+('adm', 'João', '123456', 'adm', 'joao@teste.com');
+
 -- --------------------------------------------------------
 
 --
@@ -63,6 +70,17 @@ CREATE TABLE `usuarios` (
   `nivel` varchar(3) DEFAULT NULL,
   `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`login`, `nome`, `senha`, `nivel`, `email`) VALUES
+('1', 'Murilo', '123789', 'usu', 'murilo@teste.com'),
+('2', 'Max', '789123', 'usu', 'max@teste.com'),
+('3', 'Rafael', '321987', 'usu', 'rafael@teste.com'),
+('4', 'Savio', '321654', 'usu', 'savio@teste.com'),
+('5', 'Vanessa', '123654', 'usu', 'vanessa@teste.com');
 
 --
 -- Índices para tabelas despejadas
