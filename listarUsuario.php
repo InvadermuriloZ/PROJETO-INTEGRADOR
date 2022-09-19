@@ -1,6 +1,6 @@
 <?php
-    include "../conexao.php";
-    include "../controle.php";
+    include "conexao.php";
+    include "controle.php";
     
     
     $sql = "select * from usuarios order by nome";
@@ -57,8 +57,4 @@
             </div>
         </div>  
 
-<?php
-    include "../footer.php";
-    include "../header.php";
-?>
    

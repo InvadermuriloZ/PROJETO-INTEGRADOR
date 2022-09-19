@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Set-2022 às 15:59
+-- Tempo de geração: 19-Set-2022 às 16:43
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `pi`
 --
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `admin`
---
-
-CREATE TABLE `admin` (
-  `login` varchar(30) NOT NULL,
-  `nome` varchar(60) DEFAULT NULL,
-  `senha` varchar(30) DEFAULT NULL,
-  `nivel` varchar(3) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `admin`
---
-
-INSERT INTO `admin` (`login`, `nome`, `senha`, `nivel`, `email`) VALUES
-('adm', 'João', '123456', 'adm', 'joao@teste.com');
 
 -- --------------------------------------------------------
 
@@ -77,6 +56,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`nome`, `senha`, `nivel`, `email`, `telefone`, `login`) VALUES
+('Maria', '987654', 'adm', 'adm@teste.com', 2147483647, 1),
 ('Max', '789123', 'usu', 'max@teste.com', NULL, NULL),
 ('Murilo', '123789', 'usu', 'murilo@teste.com', NULL, NULL),
 ('Rafael', '321987', 'usu', 'rafael@teste.com', NULL, NULL),
@@ -86,12 +66,6 @@ INSERT INTO `usuarios` (`nome`, `senha`, `nivel`, `email`, `telefone`, `login`) 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices para tabela `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`login`);
 
 --
 -- Índices para tabela `imovel`

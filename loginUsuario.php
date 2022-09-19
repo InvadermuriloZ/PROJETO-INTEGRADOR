@@ -1,6 +1,6 @@
 <?php
-    include "../conexao.php";
-    include "../controle.php";
+    include "conexao.php";
+    include "controle.php";
 
     if(isset($_GET['login'])){
 
@@ -19,7 +19,7 @@
         <div class="container bg-info pag">    
             <h1>Login</h1>
             <hr>
-            <form name="form" method="post" action="updateUsuario.php">
+            <form >
                 <div class="mb-3">
                     <input type="hidden" id="login" name="entra" value="<?php echo $login; ?>">                    
                 </div>                
@@ -49,17 +49,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
-<?php
 
-    }
-    else{
-        echo "
-            <p> Esta é uma página de tratamento de dados. </p>
-            <p> Clique <a href='listarUsuario.php'>aqui</a> para selecionar um Usuário. </p>
-        ";   
-    }
-
-    include "../footer.php";
-    include "../header.php";
-?>
 

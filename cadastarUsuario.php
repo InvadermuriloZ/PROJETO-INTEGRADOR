@@ -1,8 +1,8 @@
 <?php
-    include "../conexao.php";
-    include "../controle.php";
+    include "conexao.php";
+    include "controle.php";
 
-    if(isset($_GET['login'])
+    if(isset($_GET['login'])){
 
         $login = $_GET['login'];
         
@@ -16,9 +16,8 @@
         $nome = $exibe['nome'];
         $email = $exibe['email'];
         $nivel = $exibe['nivel'];
-        $foto = $exibe['foto'];
 
-
+    }
     
 ?>
     <div class="container bg-info pag">
@@ -35,11 +34,10 @@
                             <p> Senha: $senha </p>                    
                             <p> Email: $email </p>
                             <p> Nível: $nivel </p>
-                            <p> Endereço: $endereco </p>
                             <p> Telefone: $telefone </p>
 
                         ";
-                    ?>  
+?>  
                 </div>
             </div>                
                      
@@ -53,9 +51,4 @@
             </div>
         </div>
     </div>   
-
-    <?php
-    include "../footer.php";
-    include "../header.php";
-?>
    

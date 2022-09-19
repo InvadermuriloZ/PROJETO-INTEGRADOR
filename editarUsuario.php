@@ -1,6 +1,6 @@
 <?php
-    include "../conexao.php";
-    include "../controle.php";
+    include "conexao.php";
+    include "controle.php";
 
     if(isset($_GET['login'])){
 
@@ -12,8 +12,9 @@
 
         $nome = $exibe['nome'];
         $email = $exibe['email'];
-    
+    }   
 ?>
+
 
         <div class="container bg-info pag">    
             <h1>Editar Dados do Usuario</h1>
@@ -45,15 +46,6 @@
             </form>           
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
-</html>
-<?php
-
-    }
-
-
-    include "../footer.php";
-    include "../header.php";
-?>
-
+        </body>
+        </html>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
