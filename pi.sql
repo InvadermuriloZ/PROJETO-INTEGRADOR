@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Set-2022 às 13:37
+-- Tempo de geração: 19-Set-2022 às 14:43
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -64,8 +64,7 @@ CREATE TABLE `imovel` (
 --
 
 CREATE TABLE `usuarios` (
-  `login` varchar(30) NOT NULL,
-  `nome` varchar(60) DEFAULT NULL,
+  `nome` varchar(60) NOT NULL,
   `senha` varchar(30) DEFAULT NULL,
   `nivel` varchar(3) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
@@ -77,12 +76,12 @@ CREATE TABLE `usuarios` (
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`login`, `nome`, `senha`, `nivel`, `email`, `endereco`, `telefone`) VALUES
-('1', 'Murilo', '123789', 'usu', 'murilo@teste.com', NULL, NULL),
-('2', 'Max', '789123', 'usu', 'max@teste.com', NULL, NULL),
-('3', 'Rafael', '321987', 'usu', 'rafael@teste.com', NULL, NULL),
-('4', 'Savio', '321654', 'usu', 'savio@teste.com', NULL, NULL),
-('5', 'Vanessa', '123654', 'usu', 'vanessa@teste.com', NULL, NULL);
+INSERT INTO `usuarios` (`nome`, `senha`, `nivel`, `email`, `endereco`, `telefone`) VALUES
+('Max', '789123', 'usu', 'max@teste.com', NULL, NULL),
+('Murilo', '123789', 'usu', 'murilo@teste.com', NULL, NULL),
+('Rafael', '321987', 'usu', 'rafael@teste.com', NULL, NULL),
+('Savio', '321654', 'usu', 'savio@teste.com', NULL, NULL),
+('Vanessa', '123654', 'usu', 'vanessa@teste.com', NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -104,7 +103,7 @@ ALTER TABLE `imovel`
 -- Índices para tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`login`);
+  ADD PRIMARY KEY (`nome`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
