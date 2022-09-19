@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Set-2022 às 14:57
+-- Tempo de geração: 19-Set-2022 às 15:59
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -68,7 +68,6 @@ CREATE TABLE `usuarios` (
   `senha` varchar(30) DEFAULT NULL,
   `nivel` varchar(3) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
-  `endereco` int(100) DEFAULT NULL,
   `telefone` int(11) DEFAULT NULL,
   `login` int(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -77,12 +76,12 @@ CREATE TABLE `usuarios` (
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`nome`, `senha`, `nivel`, `email`, `endereco`, `telefone`, `login`) VALUES
-('Max', '789123', 'usu', 'max@teste.com', NULL, NULL, NULL),
-('Murilo', '123789', 'usu', 'murilo@teste.com', NULL, NULL, NULL),
-('Rafael', '321987', 'usu', 'rafael@teste.com', NULL, NULL, NULL),
-('Savio', '321654', 'usu', 'savio@teste.com', NULL, NULL, NULL),
-('Vanessa', '123654', 'usu', 'vanessa@teste.com', NULL, NULL, NULL);
+INSERT INTO `usuarios` (`nome`, `senha`, `nivel`, `email`, `telefone`, `login`) VALUES
+('Max', '789123', 'usu', 'max@teste.com', NULL, NULL),
+('Murilo', '123789', 'usu', 'murilo@teste.com', NULL, NULL),
+('Rafael', '321987', 'usu', 'rafael@teste.com', NULL, NULL),
+('Savio', '321654', 'usu', 'savio@teste.com', NULL, NULL),
+('Vanessa', '123654', 'usu', 'vanessa@teste.com', NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
