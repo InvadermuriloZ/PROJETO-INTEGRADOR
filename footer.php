@@ -30,10 +30,10 @@ include "controle.php";
             <div class="col">
             <form class="form-inline mt-2 mt-md-0">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Anunciar Imóveis</button>
-                        <ul><a href="#"><img src="img/facebook.png" alt=""></a></ul>
-                        <ul><a href="#"><src="img\whatsapp.jfif" alt=""></a></ul>
-                        <ul><a href="#"><img\youtube.png" alt=""></a></ul>
-                        <ul><a href="#"><src="img\instagram.jfif" alt=""></a></ul>
+                        <ul><a href="#"><img src="img\facebook.png" alt=""></a></ul>
+                        <ul><a href="#"><img src="img\whatsapp.jfif" alt=""></a></ul>
+                        <ul><a href="#"><img src="img\youtube.png" alt=""></a></ul>
+                        <ul><a href="#"><img src="img\instagram.jfif" alt=""></a></ul>
                     </form>
                     
             </div>
