@@ -10,7 +10,7 @@
 
         <div class="container bg-info pag">
             <div class="text-end">
-                <a href="formularioUsuario.php"> <button type="button" class="btn btn-success btn-sm">NOVO</button> </a>
+                <a href="loginUsuario.php"> <button type="button" class="btn btn-success btn-sm">NOVO</button> </a>
             </div>
             <h2>Lista de Usuários</h2>
             <div class="container text-center">
