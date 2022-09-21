@@ -1,6 +1,6 @@
 <?php
-    include "conexao.php";
-    include "controle.php";
+    include"conexao.php";
+    include"controle.php";
 
     if(isset($_GET['login'])){
 

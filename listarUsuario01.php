@@ -1,6 +1,6 @@
 <?php
-    include "conexao.php";
-    include "controle.php";
+    include"conexao.php";
+    include"controle.php";
     
     
     $sql = "select * from usuarios order by nome";
@@ -46,9 +46,9 @@
                         <?php echo $exibe['email']?>
                     </div>
                     <div class="col-3">
-                        <a href="listarUsuario.php?login=<?php echo $login ?>"><button type="button" class="btn btn-success btn-sm botao">Listar</button></a>
-                        <a href="cadastrarUsuario.php?login=<?php echo $login ?>"><button type="button" class="btn btn-primary btn-sm botao">Cadastrar</button></a>
-                        <a href="loginUsuario.php?login=<?php echo $login ?>" onclick="return confirm('Confirma o Login do Usuário?')" > <button type="button" class="btn btn-danger btn-sm">Login</button> </a>
+                        <a href="visualizarUsuario.php?login=<?php echo$login ?>"><button type="button" class="btn btn-success btn-sm botao">Visualizar</button></a>
+                        <a href="editarUsuario.php?login=<?php echo$login ?>"><button type="button" class="btn btn-primary btn-sm botao">Editar</button></a>
+                        <a href="excluirUsuario.php?login=<?php echo$login ?>" onclick="return confirm('Confirma a Exclusão do Usuário?')"><button type="button" class="btn btn-danger btn-sm">Excluir</button> </a>
                     </div>
                 </div>
                 <?php

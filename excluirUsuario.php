@@ -1,7 +1,7 @@
 <?php
     include "conexao.php";
 
-    if(isset($_GET['login'])){
+    if(isset($_GET['nome'])){
 
         $login = $_GET['login'];
         

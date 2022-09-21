@@ -1,10 +1,10 @@
 <?php
-    include "conexao.php";
-    include "controle.php";
+    include"conexao.php";
+    include"controle.php";
 
-    if(isset($_GET['login'])){
+    if(isset($_GET['nome'])){
 
-        $login = $_GET['login'];
+        $login = $_GET['nome'];
         
         $sql = "select * from usuarios where login = '$login'";
         $seleciona = mysqli_query($conexao,$sql);
@@ -16,7 +16,7 @@
 ?>
 
 
-        <div class="container bg-info pag">    
+        <div class="container bg-info ">    
             <h1>Editar Dados do Usuario</h1>
             <hr>
             <form name="form" method="post" action="updateUsuario.php">
@@ -34,7 +34,7 @@
                 
                 <div class="row mt-5">
                     <div class="col text-start">
-                        <a href="listarUsuario.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
+                        <a href="listarUsuario01.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
                     </div>
                     <div class="col">
                         <button type="editarSenha.php?login<?php echo $login; ?>" class="btn btn-danger btn-sm botao">ALTERAR SENHA</button></a>

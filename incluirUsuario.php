@@ -1,6 +1,6 @@
 <?php
 
-    include "conexao.php";
+    include"conexao.php";
 
     if(isset($_POST['nome'])){
    
@@ -18,7 +18,7 @@
             echo "
                 <script>
                     alert('Usuário cadastrado com sucesso!');
-                    window.location = 'listarUsuario.php';
+                    window.location = 'listarUsuario01.php';
                 </script>
             ";
         }
