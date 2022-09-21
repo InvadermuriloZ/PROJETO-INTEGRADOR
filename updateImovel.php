@@ -1,12 +1,13 @@
 <?php
 
-include"../conexao.php";
+include"conexao.php";
 
-if(isset($_POST['local'])){
+if(isset($_POST['idImovel'])){
         // Entrada
 
-      
+        $idImovel = trim($_POST['idImovel']);
         $local = trim($_POST['local']);
+        $foto = trim($_POST['foto']);
         $valor = trim($_POST['valor']);
         $quartos = trim($_POST['quartos']);
         $dimensao = trim($_POST ['dimensao']);
@@ -15,15 +16,15 @@ if(isset($_POST['local'])){
 
 
         //Processamento
-        $sql = "update imovel set local = '$local', valor = '$valor', quartos = '$quartos', dimensao = '$dimensao', vagagaragem = '$vagagaragem' where
-        local = ' $local'";
+        $sql = "update imovel set local = '$local', foto = '$foto', valor = '$valor', quartos = '$quartos', dimensao = '$dimensao' where
+        id = $idImovel ";
         $alterar = mysqli_query($conexao,$sql);
 
        // Saida
        if($alterar){
           echo "
           
-          <script> alert (' Imóvel Atualizado com sucesso! ');
+          <script> alert (' Aluno Atualizado com sucesso! ');
           window.location = 'listarImovel.php';
           </script>
 
@@ -42,10 +43,14 @@ if(isset($_POST['local'])){
        else{
         echo"
         <p> Está é uma página de tratamento de dados. </p>
-        <p> Clique <a href= 'listarImovel.php'> aqui </a> para selecionar um imóvel. </p>
+        <p> Clique <a href= 'listarImovel.php'> aqui </a> para selecionar um aluno. </p>
 
         ";
         }
 
 
+?>
+
+<?php
+include"footer.php";
 ?>

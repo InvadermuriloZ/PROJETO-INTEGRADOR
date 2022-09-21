@@ -22,7 +22,7 @@
         </div>
 
         <div class="text-center text-danger">
-          <?php include"valida.php" ?>
+          <?php include"validaImovel.php" ?>
         </div>
 
 

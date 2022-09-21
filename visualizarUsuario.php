@@ -27,10 +27,6 @@
         <hr>
         <div class="container text-start bg-gradient p-3">
             <div class="row">
-                <div class="col-2 text-center">
-                    <img src="<?phpecho$foto?>">
-                    <p> <a href="editarFoto.php?login=<?php echo $login; ?>">Editar Foto </a></p>
-                </div>
                 <div class="col-10">
                     <?php
                     

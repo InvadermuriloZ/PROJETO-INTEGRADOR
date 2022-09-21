@@ -30,7 +30,7 @@
                 <div class="col-10">
                     <?php
                         echo "
-                        <   p> Nome: $nome </>
+                            <p> Nome: $nome </p>
                             <p> Senha: $senha </p>                    
                             <p> Email: $email </p>
                             <p> Nível: $nivel </p>

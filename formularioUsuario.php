@@ -6,7 +6,7 @@ include"controle.php";
 ?>
         <div class="container pag">
             <h1>Cadastro de Usuarios</h1>
-            <form name="form" method="post" action="incluirAluno.php"> 
+            <form name="form" method="post" action="incluirUsuario.php"> 
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" name="nome" required>
