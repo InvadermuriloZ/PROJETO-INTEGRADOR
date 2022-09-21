@@ -1,12 +1,12 @@
 <?php
-    include "conexao.php";
-    include "controle.php";
+    include"conexao.php";
+    include"controle.php";
 
-    if(isset($_GET['login'])){
+    if(isset($_GET['local'])){
 
-        $login = $_GET['login'];
+        $login = $_GET['local'];
         
-        $sql = "select * from usuarios where login = '$login'";
+        $sql = "select * from imovel where local = '$login'";
         $seleciona = mysqli_query($conexao,$sql);
         $exibe = mysqli_fetch_array($seleciona);
 
@@ -35,7 +35,7 @@
                 
                 <div class="row mt-5">
                     <div class="col text-start">
-                        <a href="listarUsuario.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
+                        <a href="listarImovel.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
                     </div>
                     <div class="col">
                         <button type="editarSenha.php?login<?php echo $login; ?>" class="btn btn-danger btn-sm botao">ALTERAR SENHA</button></a>
