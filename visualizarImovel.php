@@ -1,8 +1,8 @@
 
 <?php
 //abrindo conexao com o banco de dados
-        include"controle.php";
-        include"conexao.php";
+        include"../controle.php";
+        include"../conexao.php";
         $erro = 0;
      //tratamento de erro
         if(isset($_GET['idImovel'])){
@@ -69,5 +69,5 @@
 
 
    <?php
-    include"footer.php";
+    
    ?>

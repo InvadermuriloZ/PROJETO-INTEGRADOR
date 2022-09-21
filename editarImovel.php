@@ -1,7 +1,7 @@
 <?php
 
-include"controle.php";
-include"conexao.php";
+include"../controle.php";
+include"../conexao.php";
 
 $erro = 0;
 if(isset($_GET['idImovel'])){
@@ -86,6 +86,6 @@ else{
 
 
    <?php
-   include "footer.php"
+   
    ?>
    

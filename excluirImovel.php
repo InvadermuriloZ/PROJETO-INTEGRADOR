@@ -1,5 +1,5 @@
 <?php
-include"conexao.php";
+include"../conexao.php";
 
 // tratamento de erro
   if(isset($_GET['idImovel'])){
@@ -37,8 +37,4 @@ include"conexao.php";
     ";
       }
   
-?>
-
-<?php
-include"footer.php";
 ?>

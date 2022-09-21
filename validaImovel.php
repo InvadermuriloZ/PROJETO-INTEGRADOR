@@ -1,12 +1,12 @@
 <?php
-include"conexao.php";
+include"../conexao.php";
 
 
  if(isset($_POST['local'])){
     $login = trim ($_POST['login']);
     $senha = trim ($_POST['senha']);
 
-    $sql = "select *from imovel where login
+    $sql = "select *from imovel where local
     ='$login' and senha = '$senha'";
     $testeLogin = mysqli_query($conexao,$sql);
     $existe = mysqli_num_rows($testeLogin);
@@ -14,10 +14,11 @@ include"conexao.php";
            
             if($existe){
             $dados = mysqli_fetch_array($testeLogin);
-            $nome = $dados['nome'];
-            $nivel = $dados['nivel'];
-            $emai = $dados['email'];
-            $foto = $dados['foto'];
+            $local = $dados['local'];
+            $valor = $dados['valor'];
+            $quartos = $dados['quartos'];
+            $dimensao = $dados['dimensao'];
+            $vagagaragem = $dados['vagagaragem'];
 
     
 
@@ -25,11 +26,11 @@ include"conexao.php";
                 session_start();
             }
 
-            $_SESSION['login'] = $login;        
-            $_SESSION['nome'] = $nome;        
-            $_SESSION['email'] = $email;        
-            $_SESSION['nivel'] = $nivel;        
-            $_SESSION['foto'] = $foto;        
+            $_SESSION['local'] = $local;        
+            $_SESSION['valor'] = $valor;        
+            $_SESSION['quartos'] = $quartos;        
+            $_SESSION['dimensao'] = $dimensao;        
+            $_SESSION['vagagaragem'] = $vagagaragem;        
             
     
             if ($nivel == 'adm'){
@@ -52,8 +53,4 @@ include"conexao.php";
  }
 
 
-?>
-
-<?php
-include"footer.php";
 ?>

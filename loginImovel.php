@@ -1,5 +1,5 @@
 <?php
-  include"controle.php";
+  include"../controle.php";
 ?>
 <link rel="stylesheet" href="css/style.css">
 <div class="container mt-5 text-center">
@@ -17,12 +17,12 @@
         </div>
         <button type= "submit" class= "btn btn-primary"> OK </button>
          
-        <p class="mt-2"> <a href ="formularioUsuario.php">Não possou Cadastro </a> </p> 
+        <p class="mt-2"> <a href ="formularioImovel.php">Não possou Cadastro </a> </p> 
 
         </div>
 
         <div class="text-center text-danger">
-          <?php include"valida.php" ?>
+          <?php include"validaImovel.php" ?>
         </div>
 
 
@@ -37,5 +37,5 @@
 
 
 <?php
-    include"footer.php";
+    
 ?>

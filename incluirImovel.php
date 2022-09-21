@@ -1,20 +1,24 @@
 <?php
   
-  include"conexao.php";
+  include"../conexao.php";
 
   if(isset($_POST['local'])){
 
     //entrada
     $local = trim($_POST['local']);
-    $foto = trim($_POST['foto']);
+    $foto = '../fotos/semfoto.png';
     $valor = trim($_POST['valor']);
     $quartos = trim($_POST['quartos']);
     $dimensao = trim($_POST['dimensao']);
     $vagagaragem = trim($_POST['vagagaragem']);
+ 
+  
+
+
     
     //processamento - incluir no banco de dados 
-    $sql = "Insert into imovel(local,foto,valor,quartos,dimensao,vagagaragem)
-            values('$local' , '$foto' , '$valor' , '$quartos' , '$dimensao','$vagagaragem')";
+    $sql = "insert into imovel (local,foto,valor,quartos,dimensao,vagagaragem)
+            values('$local' ,'$foto','$valor' , '$quartos' , '$dimensao','$vagagaragem')";
             $incluir = mysqli_query($conexao,$sql);
 
             //saida - feedback ao usuario
@@ -38,23 +42,20 @@
                 echo mysqli_error($conexao);
             }
 
-  }
+          }
+  
             else{
               echo "
               <p> Esta é uma página de tratamento de dados.</p>
-              <p> Clique <a href = 'formularioImovel.php'>aqui<a/> para incluir um aluno. 
+              <p> Clique <a href = 'formularioImovel.php'>aqui<a/> para incluir um imóvel. 
               </p>
               ";
             }
           
 
+          
 
 
 
 
-
-?>
-
-<?php
-include"footer.php";
 ?>
