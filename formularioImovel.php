@@ -1,5 +1,5 @@
 <?php
-include"../controle.php";
+include"controle.php";
 
 
 ?>
@@ -33,5 +33,5 @@ include"../controle.php";
       
     
  <?php
-    include"../footer.php";
+    include"footer.php";
    ?>

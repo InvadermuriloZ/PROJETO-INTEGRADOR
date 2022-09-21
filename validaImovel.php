@@ -53,3 +53,7 @@ include"conexao.php";
 
 
 ?>
+
+<?php
+include"footer.php";
+?>

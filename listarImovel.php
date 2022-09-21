@@ -1,6 +1,6 @@
 <?php
-include"../controle.php";
-include"../conexao.php";
+include"controle.php";
+include"conexao.php";
 
 
 $sql = "select * from imovel order by local";
@@ -82,5 +82,5 @@ $seleciona = mysqli_query($conexao,$sql);
     </div>
 
    <?php
-    
+    include"footer.php";
    ?>

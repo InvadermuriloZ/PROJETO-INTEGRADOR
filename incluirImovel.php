@@ -1,6 +1,6 @@
 <?php
   
-  include"../conexao.php";
+  include"conexao.php";
 
   if(isset($_POST['local'])){
 
@@ -53,4 +53,8 @@
 
 
 
+?>
+
+<?php
+include"footer.php";
 ?>

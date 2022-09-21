@@ -26,3 +26,7 @@
     }
    
 ?>
+
+<?php
+include"footer.php";
+?>

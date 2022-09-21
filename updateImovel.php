@@ -1,6 +1,6 @@
 <?php
 
-include"../conexao.php";
+include"conexao.php";
 
 if(isset($_POST['idImovel'])){
         // Entrada
@@ -49,4 +49,8 @@ if(isset($_POST['idImovel'])){
         }
 
 
+?>
+
+<?php
+include"footer.php";
 ?>
