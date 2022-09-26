@@ -1,0 +1,53 @@
+/* A medida em você rem vai zerar o padrão e vai trabalhr com o tamnho que você estiver usando. E o em, vai adicionar o valor que vvocê colocar + a medida que já vem pré definida pelos próprios comandos 
+ */
+ /* Sempre que  formatação do css não estiver funcionando, aperta shift + F5, pois caso você mude algo do css ele vai buscar no navegador, no cash, e não no servidor que seria o certo, por isso não atualiza as vezes apenas com F5*/
+ .pag{
+    margin-top: 2em;
+    padding: 5em;
+    border-radius: 2em;
+    text-align: center;
+    color: white;
+    background-color: rgb(55, 125, 255);
+    
+}
+
+.pad{
+    margin-top: 1em;
+}
+
+.quadro a img{
+      opacity: 0.5;
+      width: 50%;
+      max-height: 180px;
+}
+
+.foto{
+    width: 2em;
+}
+
+.navbar{
+    margin: 2%;
+}
+.cor{
+    color: white;
+}
+.bg{
+    color: white;
+}
+.imagem{
+    border-radius: 5%;
+}
+hr{
+    color: white;
+}
+.goiaba{
+    background-color: green;
+    height: 333px;
+}
+marquee{
+    color: yellow;
+}
+.parceiros{
+  width: 300px;
+  height: auto;
+}
