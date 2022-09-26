@@ -1,0 +1,11 @@
+﻿Núm,Projeto,Relator,Atribuído a,Prioridade,Gravidade,Freqüência,Versão do Produto,Categoria,Data de Envio,SO,Versão SO,Plataforma,Visibilidade,Atualizado,Resumo,Estado,Resolução,Corrigido na Versão
+0000009,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,O logout estava soberobepondo ao css,resolvido,aberto,
+0000010,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,"O footer não está se alinhado às propagandas de Facebook, Instagram, Youtube e Twitter",resolvido,aberto,
+0000006,Projeto Integrador,administrator,,alta,grande,às vezes,,General,2022-09-26,,,,público,2022-09-26,A página login não estavq sendo encaminhada para a página adm,resolvido,aberto,
+0000007,Projeto Integrador,administrator,,alta,grande,às vezes,,General,2022-09-26,,,,público,2022-09-26,A página logout não estava se comunicando com a página login,resolvido,aberto,
+0000008,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,"Quando se implementa o Logout, a página inicial ""desce""",resolvido,aberto,
+0000001,Projeto Integrador,administrator,,alta,grande,às vezes,,General,2022-09-26,,,,público,2022-09-26,A página login não estavq sendo encaminhada para a página adm,resolvido,aberto,
+0000002,Projeto Integrador,administrator,,alta,grande,às vezes,,General,2022-09-26,,,,público,2022-09-26,A página logout não estava se comunicando com a página login,resolvido,aberto,
+0000004,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,"Quando se implementa o Logout, a página inicial ""desce""",resolvido,aberto,
+0000003,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,O logout estava soberobepondo ao css,resolvido,aberto,
+0000005,Projeto Integrador,administrator,,alta,grande,sempre,,General,2022-09-26,,,,público,2022-09-26,"O footer não está se alinhado às propagandas de Facebook, Instagram, Youtube e Twitter",resolvido,aberto,
